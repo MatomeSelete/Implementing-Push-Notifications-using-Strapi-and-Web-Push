@@ -3,6 +3,8 @@ import React from 'react';
 import AllRoutes from './components/Routes/AllRoutes';
 import { BrowserRouter } from "react-router-dom";
 import { generalContext, StateAndEndpointHOC } from './components/contexts/MainContext';
+import './App.css'
+
 function App(props) {
   const value = React.useMemo(() => props, [props]);
   return (

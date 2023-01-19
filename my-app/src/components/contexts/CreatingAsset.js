@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { generalContext } from '../../contexts/MainContext';
-import { subscribeUser } from '../../subscription'
+import { subscribeUser } from '../../subscription';
+
 const CreateAssets = ({token}) => {
   const StateManager = useContext(generalContext)
   const location = useLocation();

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notification_collections",
+  "info": {
+    "singularName": "notification-collection",
+    "pluralName": "notification-collections",
+    "displayName": "Notification Collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Message": {
+      "type": "richtext"
+    },
+    "Metadata": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users_permissions_users",
+  "info": {
+    "singularName": "users-permissions-user",
+    "pluralName": "users-permissions-users",
+    "displayName": "UserNotificationKey",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asset.asset",
+      "inversedBy": "UserNotificationKey"
+    },
+    "subscription": {
+      "type": "json"
+    }
+  }
+}

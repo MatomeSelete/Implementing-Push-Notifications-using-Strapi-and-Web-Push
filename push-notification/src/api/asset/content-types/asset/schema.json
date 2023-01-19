@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assets",
+  "info": {
+    "singularName": "asset",
+    "pluralName": "assets",
+    "displayName": "Asset"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "model_number": {
+      "type": "integer"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "perishable",
+        "non-perishable"
+      ]
+    },
+    "is_available": {
+      "type": "boolean",
+      "default": true
+    },
+    "validity_period": {
+      "type": "datetime"
+    },
+    "is_expired": {
+      "type": "datetime"
+    },
+    "UserNotificationKey": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::users-permissions-user.users-permissions-user",
+      "mappedBy": "users_permissions_user"
+    }
+  }
+}
